@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Mini-Ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>Loja de produtos</h1>
+            <div class="controls">
+                <input type="text" id="search" placeholder="O que você procura hoje?">
+                <select id="category">
+                    <option value="Todas">Categorias</option>
+                </select>
+                <button id="btnRender">Atualizar Catálogo</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container content-grid">
+        <section id="product-list" class="cards-grid"></section>
+
+        <aside class="sidebar">
+            <div id="product-details" class="details-box">
+                <h3>Detalhes</h3>
+                <p class="placeholder-text">Selecione um produto para ver as especificações completas.</p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
